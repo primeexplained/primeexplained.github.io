@@ -125,6 +125,7 @@ footer { margin-top: 40px; background: var(--ink); color: #FFFFFF; }
 footer .wrap { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 20px; padding-top: 28px; padding-bottom: 28px; }
 footer .brand { color: #FFFFFF; }
 footer p { margin: 4px 0 0; }
+footer .contact { color: #FFFFFF; font-weight: 500; overflow-wrap: anywhere; }
 footer .button { box-shadow: 5px 5px 0 var(--blue); }
 
 @media (max-width: 860px) {
