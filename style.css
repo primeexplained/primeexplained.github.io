@@ -100,10 +100,6 @@ section { padding: 36px 0; }
 .steps li::before { content: counter(step); display: flex; align-items: center; justify-content: center; width: 48px; height: 48px; margin-bottom: 12px; border: var(--line); border-radius: 50%; background: var(--blue); color: #FFFFFF; font-weight: 700; font-size: 24px; }
 .steps p { margin: 0; color: var(--muted); }
 
-.benefits { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin: 0 0 12px; padding: 22px 0; list-style: none; border-top: var(--line); border-bottom: var(--line); background: var(--paper); }
-.benefits li { padding: 0 22px; }
-.benefits li + li { border-left: 2px solid var(--dot); }
-.benefits p { margin: 0; color: var(--muted); }
 
 .faq { display: grid; gap: 14px; max-width: 800px; }
 .faq details { background: var(--paper); border: var(--line); border-radius: 12px; }
@@ -140,8 +136,6 @@ footer .button { box-shadow: 5px 5px 0 var(--blue); }
   .hero, .detail { grid-template-columns: 1fr; }
   .hero { padding-top: 36px; gap: 28px; }
   .steps { grid-template-columns: 1fr; gap: 18px; }
-  .benefits { grid-template-columns: 1fr; gap: 16px; }
-  .benefits li + li { border-left: 0; border-top: 2px solid var(--dot); padding-top: 16px; }
   .techs { grid-template-columns: repeat(3, 1fr); }
 }
 
