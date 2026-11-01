@@ -11,22 +11,8 @@ document.querySelectorAll(".contact").forEach((text) => {
   email.rel = "noopener";
   email.textContent = "Email us";
 
-  const copy = document.createElement("button");
-  copy.className = "contact-action";
-  copy.type = "button";
-  copy.textContent = "Copy address";
-  copy.addEventListener("click", async () => {
-    try {
-      await navigator.clipboard.writeText(address);
-      copy.textContent = "Copied!";
-    } catch {
-      copy.textContent = "Copy failed";
-    }
-    setTimeout(() => { copy.textContent = "Copy address"; }, 2000);
-  });
-
   const actions = document.createElement("span");
   actions.className = "contact-actions";
-  actions.append(email, copy);
+  actions.append(email);
   text.parentElement.after(actions);
 });
