@@ -147,11 +147,8 @@ footer .button { box-shadow: 5px 5px 0 var(--blue); }
   .button, .feature { transition: none; }
 }
 
-.contact-actions { display: inline-flex; flex-wrap: wrap; gap: 8px; margin-left: 10px; vertical-align: middle; }
-.contact-action { padding: 2px 12px; background: transparent; color: #FFFFFF; border: 2px solid #FFFFFF; border-radius: 8px; font: 500 16px/1.5 "Jost", sans-serif; text-decoration: none; cursor: pointer; }
-.contact-action:hover { background: #FFFFFF; color: var(--ink); }
-.contact-action:focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; }
-
-@media (max-width: 600px) {
-  .contact-actions { display: flex; margin: 8px 0 0; }
-}
+.contact-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
+.contact-action { padding: 6px 16px; background: transparent; color: #FFFFFF; border: 2px solid #FFFFFF; border-radius: 10px; font: 700 17px/1.5 "Jost", sans-serif; text-decoration: none; cursor: pointer; }
+.contact-action.main { background: #FFFFFF; color: var(--ink); }
+.contact-action:hover { background: var(--blue); border-color: var(--blue); color: #FFFFFF; }
+.contact-action:focus-visible { outline: 3px solid #FFFFFF; outline-offset: 3px; }
