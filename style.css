@@ -146,3 +146,12 @@ footer .button { box-shadow: 5px 5px 0 var(--blue); }
   html { scroll-behavior: auto; }
   .button, .feature { transition: none; }
 }
+
+.contact-actions { display: inline-flex; flex-wrap: wrap; gap: 8px; margin-left: 10px; vertical-align: middle; }
+.contact-action { padding: 2px 12px; background: transparent; color: #FFFFFF; border: 2px solid #FFFFFF; border-radius: 8px; font: 500 16px/1.5 "Jost", sans-serif; text-decoration: none; cursor: pointer; }
+.contact-action:hover { background: #FFFFFF; color: var(--ink); }
+.contact-action:focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; }
+
+@media (max-width: 600px) {
+  .contact-actions { display: flex; margin: 8px 0 0; }
+}
