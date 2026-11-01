@@ -65,10 +65,12 @@ h3 { font-size: 26px; line-height: 1.2; margin: 0 0 6px; }
 /* Hero */
 .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 40px; align-items: center; padding: 56px 0 40px; }
 .signal { display: block; width: 100%; height: auto; max-width: 540px; margin: 0 auto; }
-.signal line { stroke: var(--blue); stroke-width: 3; stroke-dasharray: 8 8; animation: flow 1.4s linear infinite; }
+.signal line { stroke: var(--dot); stroke-width: 4; }
+.signal .packet rect { fill: var(--paper); stroke: var(--blue); stroke-width: 3; }
+.signal .packet path { fill: none; stroke: var(--blue); stroke-width: 3; stroke-linecap: round; }
+.signal .pulse { stroke: var(--blue); stroke-width: 4; }
 .signal text { font-family: "Jost", sans-serif; font-weight: 700; font-size: 18px; text-anchor: middle; }
 .signal .hub { fill: var(--paper); stroke: var(--ink); stroke-width: 4; }
-@keyframes flow { to { stroke-dashoffset: -16; } }
 
 /* Sections */
 section { padding: 36px 0; }
@@ -148,6 +150,5 @@ footer .button { box-shadow: 5px 5px 0 var(--blue); }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .signal line { animation: none; }
   .button, .feature { transition: none; }
 }
