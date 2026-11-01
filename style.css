@@ -63,12 +63,7 @@ h3 { font-size: 26px; line-height: 1.2; margin: 0 0 6px; }
 .note { color: var(--muted); font-size: 17px; margin: 14px 0 0; }
 
 /* Hero */
-.hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 40px; align-items: center; padding: 56px 0 40px; }
-.signal { display: block; width: 100%; height: auto; max-width: 540px; margin: 0 auto; }
-.signal .marker { fill: none; stroke: var(--blue); stroke-width: 4; stroke-linecap: round; stroke-dasharray: 1; stroke-dashoffset: 1; }
-.signal text { font-family: "Jost", sans-serif; font-weight: 700; font-size: 18px; text-anchor: middle; }
-.signal .hub { fill: var(--paper); stroke: var(--ink); stroke-width: 4; }
-.signal .note { font-family: var(--hand); font-weight: 400; font-size: 17px; fill: var(--blue); }
+.hero { padding: 56px 0 24px; }
 
 /* Sections */
 section { padding: 36px 0; }
@@ -133,8 +128,8 @@ footer p { margin: 4px 0 0; }
 footer .button { box-shadow: 5px 5px 0 var(--blue); }
 
 @media (max-width: 860px) {
-  .hero, .detail { grid-template-columns: 1fr; }
-  .hero { padding-top: 36px; gap: 28px; }
+  .detail { grid-template-columns: 1fr; }
+  .hero { padding-top: 36px; }
   .steps { grid-template-columns: 1fr; gap: 18px; }
   .techs { grid-template-columns: repeat(3, 1fr); }
 }
